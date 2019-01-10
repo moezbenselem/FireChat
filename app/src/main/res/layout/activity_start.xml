@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/login_back"
+    tools:context="moezbenselem.firechat.StartActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+
+                android:alpha="0.8"
+
+
+                app:srcCompat="@drawable/login_logo"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:animateLayoutChanges="true"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:text="Login"
+                android:background="@drawable/bt_vert"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/button2"
+                android:background="@drawable/bt_blue"
+                android:layout_centerHorizontal="true"
+                android:layout_height="75dp"
+
+                android:text="Inscription" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_layout"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_below="@id/editText"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <Button
+                android:id="@+id/btValidLogin"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/editText2"
+                android:layout_height="75dp"
+                android:background="@drawable/bt_gray"
+                android:text="Valider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/insc_layout"
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/insc_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nom et Prénom"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/insc_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/insc_nom"
+                android:hint="Email-Identifiant" />
+
+            <EditText
+                android:id="@+id/insc_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_below="@id/insc_email"
+                android:inputType="textPassword"
+                android:hint="Mot de Passe" />
+
+
+
+            <Button
+                android:id="@+id/bt_insc_valid"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/insc_psw"
+                android:background="@drawable/bt_gray"
+                android:layout_height="75dp"
+                android:text="Valider" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

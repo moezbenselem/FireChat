@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="moezbenselem.firechat.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Profile Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_all_users"
+        android:orderInCategory="100"
+        android:title="All Users"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_signout"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+</menu>

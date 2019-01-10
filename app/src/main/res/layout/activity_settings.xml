@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context="moezbenselem.firechat.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/male_avatar"
+
+        android:id="@+id/circleImageView" />
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="display name"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/circleImageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="hi there im using the fire chat app"
+        android:layout_below="@+id/display_name"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btStatus"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="21dp"
+android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_blue"
+        android:text="change status"
+        android:layout_alignParentBottom="true"
+         />
+
+    <Button
+        android:id="@+id/btImage"
+
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bt_vert"
+        android:text="change image"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btStatus"
+         />
+
+</RelativeLayout>
